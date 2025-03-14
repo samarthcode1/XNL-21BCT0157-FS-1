@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon services/user-service/index.js",
-    "start-transaction": "nodemon services/transaction-service/index.js",
-    "start-kafka": "nodemon kafka/consumer.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
+    "kafka-node": "^5.0.0",
     "kafkajs": "^2.2.4",
     "mongoose": "^8.12.1",
     "socket.io": "^4.8.1"
