@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon services/user-service/index.js",
+    "start-transaction": "nodemon services/transaction-service/index.js",
+    "start-kafka": "nodemon kafka/consumer.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +20,8 @@
     "mongoose": "^8.12.1",
     "socket.io": "^4.8.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
