@@ -17,7 +17,11 @@ const Notifications = () => {
       <h2>Notifications</h2>
       <ul>
         {notifications.map((notification, index) => (
-          <li key={index}>{JSON.stringify(notification)}</li>
+          <li key={index}>
+            <strong>From:</strong> {notification.from} <br />
+            <strong>To:</strong> {notification.to} <br />
+            <strong>Amount:</strong> ${notification.amount}
+          </li>
         ))}
       </ul>
     </div>
