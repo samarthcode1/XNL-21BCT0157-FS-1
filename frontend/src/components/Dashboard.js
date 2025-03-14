@@ -21,7 +21,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
+    <div className="dashboard">
       <h2>Dashboard</h2>
       <p>Balance: ${balance}</p>
       <h3>Transactions</h3>

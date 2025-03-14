@@ -1,22 +1,15 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post('http://localhost:3001/login', { email, password });
-      localStorage.setItem('token', response.data.token); // Save the token
-      alert('Login successful');
-    } catch (error) {
-      alert('Login failed');
-    }
+  const handleLogin = () => {
+    console.log('Login clicked');
   };
 
   return (
-    <div>
+    <div className="login-form">
       <h2>Login</h2>
       <input
         type="email"

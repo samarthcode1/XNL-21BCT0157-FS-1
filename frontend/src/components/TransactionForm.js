@@ -18,7 +18,7 @@ const TransactionForm = () => {
   };
 
   return (
-    <div>
+    <div className="transaction-form">
       <h2>Transfer Money</h2>
       <input
         type="text"

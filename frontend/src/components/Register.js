@@ -15,7 +15,7 @@ const Register = () => {
   };
 
   return (
-    <div>
+    <div className="register-form">
       <h2>Register</h2>
       <input
         type="email"

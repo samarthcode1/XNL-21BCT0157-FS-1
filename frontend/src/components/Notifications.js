@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:3002'); // Ensure this matches the backend URL
+const socket = io('http://localhost:3002');
 
 const Notifications = () => {
   const [notifications, setNotifications] = useState([]);
@@ -13,7 +13,7 @@ const Notifications = () => {
   }, [notifications]);
 
   return (
-    <div>
+    <div className="notifications">
       <h2>Notifications</h2>
       <ul>
         {notifications.map((notification, index) => (
